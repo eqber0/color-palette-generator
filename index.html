@@ -6,7 +6,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Color Palette Generator</title>
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+  <!-- Clipboard.js  -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
 </head>
 
 <body>
@@ -29,17 +36,17 @@
 
 
   <template id="template">
-    <div class="palette-card">
+    <div class="palette-card js-clipboard">
       <div class="palette-color">
       </div>
-      <div class="palette-hex">
+      <div class="palette-hex copied-el">
         <p></p>
       </div>
     </div>
   </template>
+  <div class="alertbox"></div>
 
   <script src="app.js"></script>
-
 </body>
 
 </html>

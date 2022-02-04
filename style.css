@@ -1,7 +1,5 @@
 :root {
-  --transition: .3s ease-in-out;
-}
-
+  --transition: 0.3s ease-in-out;
 }
 
 * {
@@ -11,11 +9,10 @@
 }
 
 body {
-  background: #A2A4AB;
+  background: #a2a4ab;
   font-family: Montserrat;
   position: relative;
 }
-
 
 .container {
   max-width: 1360px;
@@ -72,13 +69,12 @@ body {
 .bottom .random-btn {
   max-width: max-content;
   padding: 20px 90px;
-  background: #8E4358;
+  background: #8e4358;
   border-radius: 5px;
   margin-bottom: 10px;
   cursor: pointer;
-  transition: var(--transition)
-    /* transition: cubic-bezier(0.165, 0.84, 0.44, 1); */
-
+  transition: var(--transition);
+  /* transition: cubic-bezier(0.165, 0.84, 0.44, 1); */
 }
 
 .bottom .random-btn:hover {
@@ -91,13 +87,18 @@ body {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background: red;
+  background: #f59341;
   color: #fff;
   padding: 20px;
   z-index: 10;
   max-width: 100%;
   font-size: 12px;
   width: fit-content;
+  text-transform: ;
   border-radius: 10px;
   transition: var(--transition);
+  display: none;
+}
+.alertbox.active {
+  display: block;
 }
